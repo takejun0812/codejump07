@@ -234,6 +234,7 @@ ul {
 /* セクションlocation */
 .location-list {
     margin-top: 90px;
+    margin-bottom: 175px;
 }
 
 .map {
@@ -271,6 +272,16 @@ ul {
 
 .tel {
     padding-top: 20px;
+}
+
+footer {
+    font-size: 10px;
+    margin: 80 0 10 0;
+    text-align: center;
+}
+
+footer p {
+    
 }
 
 @media screen and (max-width:768px) {
@@ -412,6 +423,7 @@ ul {
     /* セクションlocation */
     .location-list {
         margin-top: 30px;
+        margin-bottom: 90px;
     }
 
     .map {
