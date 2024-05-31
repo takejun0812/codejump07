@@ -11,6 +11,8 @@ html {
 
 body {
     font-family: "Helvetica Neue", Arial, "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    /* font-size: 0.9em; */
+    /* line-height: 1.7; */
 }
 
 a {
@@ -42,6 +44,7 @@ ul {
 }
 
 .content-title {
+    filter: drop-shadow(1px 1px 10px #c0c0c0);
     color: white;
     font-size: 72px;
     line-height: 122.4px;
@@ -71,6 +74,7 @@ ul {
     height: 600px;
     background-size: cover;
     background-repeat: no-repeat;
+    /* center top でも問題ない */
     background-position: center center;
 }
 
@@ -80,15 +84,22 @@ ul {
     column-gap: 30px;
     color: white;
     font-weight: bold;
+    /* /htmlなどで指定しとけばfont-sizeとlineheightはいらなかった */
     font-size: 14.4px;
     line-height: 24.4px;
+    /* headerで指定 */
     padding-top: 20px;
     padding-right: 40px;
-    text-shadow: 1px 1px 2px black;
+    transition: all  0.3s ease;
+    filter: drop-shadow(1px 1px 10px #c0c0c0);
 }
 
+.header-list li a:hover {
+    color: #e03131;
+  }
 
 #header .header-title {
+    filter: drop-shadow(1px 1px 10px #c0c0c0);
     text-align: center;
     margin-top: 205px;
 }
@@ -138,6 +149,7 @@ ul {
     margin-top: 75px;
 }
 
+/* flex-wrapと小要素のwidth%で指定 */
 .good-list li {
     display: flex;
     justify-content: space-between;
@@ -181,6 +193,7 @@ ul {
     margin-bottom: 30px;
     display: flex;
     flex-wrap: wrap;
+    /* justify-content: space-between;で両端 */
 
 }
 
@@ -280,13 +293,11 @@ footer {
     text-align: center;
 }
 
-footer p {
-    
-}
 
 @media screen and (max-width:768px) {
     .content-img {
         height: 94px;
+        background-attachment: scroll;
     }
 
     .content-title {
